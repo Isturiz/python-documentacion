@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Python Documentación</title>
+</head>
+<body>
+  <!-- Indice -->
+  <nav 
+    id="navbar">
+
+    <header>Python Documentación</header>
+    <ul>
+      <li><a class="nav-link" href="#python">Python</a></li>
+      <li><a class="nav-link" href="#hola_mundo">Hola mundo</a></li>
+      <li><a class="nav-link" href="#comentarios">Comentarios</a></li>
+      <li><a class="nav-link" href="#variables">Variables</a></li>
+      <li><a class="nav-link" href="#condicionales">Condicionales</a></li>
+      <li><a class="nav-link" href="#funciones">Funciones</a></li>
+      <li><a class="nav-link" href="#bucle_for">Bucle For</a></li>
+      <li><a class="nav-link" href="#bucle_while">Bucle While</a></li>
+      <li><a class="nav-link" href="#palabras_reservadas">Palabras reservadas</a></li>
+      <li><a class="nav-link" href="#referencias">Referencias</a></li>
+    </ul>
+    
+  </nav>
+
+  <!-- Contenido -->
+  <main
+    id="main-doc">
+
+    <!-- Python -->
+    <section 
+      class="main-section"
+      id="python">
+
+      <header>Python</header>
+
+      <article>
+        <P>
+          Existen distintas versiones de Python. Esta documentación únicamente abarcará la
+          versión 3 de Python. 
+        </P>
+        <P>
+          Python es un lenguaje de alto nivel de programación interpretado cuya filosofía
+          hace hincapié en la legibilidad de su código, se utiliza para desarrollar 
+          aplicaciones de todo tipo, ejemplos: Instagram, Netflix, Panda 3D, entre otros. 
+          Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente 
+          la orientación a objetos, programación imperativa y, en menor medida, programación 
+          funcional. Es un lenguaje interpretado, dinámico y multiplataforma.
+        </P>
+        <P>
+          Python fue creado a finales de los años ochenta por Guido van Rossum en el Centro
+          para las Matemáticas y la Informática (CWI, Centrum Wiskunde & Informatica), en 
+          los Países Bajos, como un sucesor del lenguaje de programación ABC, capaz de 
+          manejar excepciones e interactuar con el sistema operativo Amoeba.
+        </P>
+      </article>
+      
+    </section>
+
+    <!-- Hola mundo -->
+    <section 
+      class="main-section"
+      id="hola_mundo">
+
+      <header>Hola mundo</header>
+
+      <article>
+        <P>
+          En Python mostrar un mensaje por consola es tan sencillo como colocar la siguiente
+          instrucción:
+        </P>
+        <code>print("Hola mundo")</code>
+        <P>
+          Todas las funciones o métodos (se pronfundizará ello más adelante) llevan 
+          paréntesis al final del nombre de la función o método para poder indicar los 
+          parámetros de la misma, en este caso, la función "print" da la instrucción
+          de imprimir por pantalla el texto que sea proporcionado como parámetro
+          dentro de los paréntesis.
+        </P>
+      </article>
+
+    </section>
+
+    <!-- Comentarios -->
+    <section 
+      class="main-section"
+      id="comentarios">
+
+      <header>Comentarios</header>
+
+      <article>
+        <p>
+          Los comentarios se pueden poner de dos formas. La primera y más apropiada 
+          para comentarios largos es utilizando la notación ''' comentario ''', 
+          tres apóstrofos de apertura y tres de cierre. La segunda notación utiliza 
+          el símbolo #, y se extienden hasta el final de la línea.
+        </p>
+        <p>
+          El intérprete no tiene en cuenta los comentarios, lo cual es útil 
+          si deseamos poner información adicional en el código. Por ejemplo, 
+          una explicación sobre el comportamiento de una sección del programa.
+        </p>
+        <code>'''
+              Comentario más largo en una línea en Python
+              '''
+              print("Hola mundo") # También es posible añadir un comentario al final de una línea de código
+        </code>
+      </article>
+      
+    </section>
+
+    <!-- Variables -->
+    <section 
+      class="main-section"
+      id="variables">
+
+      <header>Variables</header>
+
+      <article>
+        <P>
+          Las variables se definen de forma dinámica, lo que significa que no se tiene 
+          que especificar cuál es su tipo de antemano y puede tomar distintos valores 
+          en otro momento, incluso de un tipo diferente al que tenía previamente. 
+          Se usa el símbolo = para asignar valores.
+        </P>
+  
+        <code>x = 1
+              x = "texto" # Esto es posible porque los tipos son asignados dinámicamente
+        </code>
+        <P>
+          Los nombres de variables pueden contener números y letras pero deben 
+          comenzar por una letra, además existen 28 <a href="#palabras_reservadas">
+          palabras reservadas</a> que no pueden ser utilizadas para declarar variables.
+        </P>
+      </article>
+      
+    </section>
+
+    <!-- Condicionales -->
+    <section 
+      class="main-section"
+      id="condicionales">
+
+      <header>Condicionales</header>
+
+      <article>
+        <p>
+          Una sentencia condicional ejecuta su bloque de código interno solo si se cumple
+          cierta condición. Se define usando la palabra clave "if" seguida de la condición y el
+          bloque de código. Condiciones adicionales, si las hay, se introducen usando "elif" 
+          seguida de la condición y su bloque de código. 
+          
+          Todas las condiciones se evalúan secuencialmente hasta encontrar la primera que sea
+          verdadera y su bloque de código asociado es el único que se ejecuta. Opcionalmente, 
+          puede haber un bloque final utilizando la palabra reservada "else" seguida de un 
+          bloque de código que se ejecuta solo cuando todas las condiciones fueron falsas.
+        </p>
+        <p>Ejemplo 1:</p>
+        <code>verdadero = True
+              if verdadero: # No es necesario poner "verdadero == True"
+              &nbsp;print("Verdadero")
+              else:
+              &nbsp;print("Falso")
+        </code>
+        <p>Salida:</p>
+        <code>Verdadero</code>
+  
+        <p>Ejemplo 2:</p>
+        <code>lenguaje = "Python"
+              if lenguaje == "C": # lenguaje no es "C", por lo que este bloque se obviará y evaluará la siguiente condición
+              &nbsp;print("Lenguaje de programación: C")
+              elif lenguaje == "Python": # Se pueden añadir tantos bloques "elif" como se quiera
+              &nbsp;print("Lenguaje de programación: Python")
+              else: # En caso de que ninguna de las anteriores condiciones fuera cierta, se ejecutaría este bloque
+              &nbsp;print("Lenguaje de programación: indefinido")
+        </code>
+        <p>Salida:</p>
+        <code>Verdadero</code>
+      </article>
+      
+    </section>
+
+    <!-- Funciones -->
+    <section 
+      class="main-section"
+      id="funciones">
+
+      <header>Funciones</header>
+
+      <article>
+        <p>
+          Obra en construcción.
+        </p>
+      </article>
+
+    </section>
+
+    <!-- Bucle For -->
+    <section 
+      class="main-section"
+      id="bucle_for">
+
+      <header>Bucle For</header>
+
+      <article>
+        <p>
+          Obra en construcción.
+        </p>
+      </article>
+      
+    </section>
+
+    <!-- Bucle While -->
+    <section 
+      class="main-section"
+      id="bucle_while">
+
+      <header>Bucle While</header>
+
+      <article>
+        <p>
+          Obra en construcción.
+        </p>
+      </article>
+      
+    </section>
+
+    <!-- Palabras reservadas-->
+    <section 
+      class="main-section"
+      id="palabras_reservadas">
+
+      <header>Palabras reservadas</header>
+
+      <article>
+        <ul>
+          <li>and</li>
+          <li>assert</li>
+          <li>break</li>
+          <li>class</li>
+          <li>continue</li>
+          <li>def</li>
+          <li>del</li>
+          <li>elif</li>
+          <li>else</li>
+          <li>except</li>
+          <li>exec</li>
+          <li>finally</li>
+          <li>for</li>
+          <li>from</li>
+          <li>global</li>
+          <li>if</li>
+          <li>import</li>
+          <li>in</li>
+          <li>is</li>
+          <li>lambda</li>
+          <li>not</li>
+          <li>or</li>
+          <li>pass</li>
+          <li>print</li>
+          <li>raise</li>
+          <li>return</li>
+          <li>try</li>
+          <li>while</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <!-- Referencias -->
+    <section
+      class="main-section"
+      id="referencias">
+
+      <header>Referencias</header>
+
+      <article>
+        <p>Toda la documentación de este sitio web ha sido extraida de:</p>
+
+        <ul>
+          <li>
+            <a href="https://es.wikipedia.org/wiki/Python" target="_blank">Wikipedia</a>
+          </li>
+        </ul>
+      </article>
+
+    </section>
+  </main>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>  
+</body>
+</html>

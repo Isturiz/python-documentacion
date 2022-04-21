@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Color de letras */
+  --gray-letra: #4d4e53;
+  --black-letra: #000000;
+
+  /* Colores de fondo */
+  --black-fondo: #000000;
+  --black-difuminado: rgba(0, 22, 22, 0.4);
+  --white-fondo: #ffffff;
+  --white-code: #f7f7f7;
+}
+
+body {
+  /* min-width: 290px; */
+  color: var(--gray-letra);
+  background-color: var(--white-fondo);
+  font-family: 'Roboto Mono', monospace;
+  /* line-height: 1.5; */
+}
+
+#navbar {
+  position: fixed;
+  /* min-width: 290px; */
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: var(--black-difuminado);
+}
+
+header {
+  color: var(--black-letra);
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  /* font-weight: thin; */
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 90%;
+  padding: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: var(--gray-letra);
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: var(--gray-letra);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  /* margin-bottom: 110px; */
+}
+
+section article {
+  color: var(--gray-letra);
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  line-height: 2;
+  background-color: var(--white-code);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width: 815px) {
+
+  /* For mobile phones */
+  #navbar ul {
+    border: 1;
+    height: 200px;
+  }
+
+  #navbar
+  {
+    background-color: var(--white-fondo);
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+
+  }
+
+  #main-doc
+  {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px)
+{
+  #main-doc
+  {
+    margin-left: -10px;
+  }
+
+  code
+  {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
